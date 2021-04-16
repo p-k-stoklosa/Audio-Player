@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3bfdd3ba56.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-dark.css" class="styles dark">
+    <title>Audio Player</title>
+</head>
+<body>
+    <div class="container">
+        <div class="player">
+            <div class="secondary-controls">
+                <div class="controls-left">
+                    <i class="fas fa-chevron-down" onclick="openHiddenMenu()"></i>
+                </div>
+                <div class="controls-right">
+                    <i class="fas fa-adjust" onclick="changeTheme()"></i>
+                </div>
+            </div>
+            <div class="hidden-menu">
+                <div class="audio-list">
+                    <ul></ul>
+                </div>
+            </div>
+            <div class="visual-menu">
+                <div class="audio-image">
+                    <img alt="audio-image">
+                </div>
+                <div class="audio-title">
+                    <p></p>
+                </div>
+            </div>
+            <div class="advanced-menu">
+                <div class="progress-div">
+                <div class="progress-bar"></div>
+            </div>
+            <audio class="audio"></audio>
+            <div class="primary-controls">
+                <button class="prev-audio">
+                    <i class="fas fa-fast-backward"></i>
+                </button>
+                <button class="play">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button class="next-audio">
+                    <i class="fas fa-fast-forward"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
