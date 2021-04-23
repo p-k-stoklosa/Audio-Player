@@ -132,6 +132,15 @@ playBtn.addEventListener('click', () => {
     }
 });
 
+audioImage.addEventListener('click', () => {
+    const active = container.classList.contains('playing');
+    if (active) {
+        pauseSong();
+    } else {
+        playSong();
+    }
+});
+
 hiddenMenu.addEventListener('click', changeAudio);
 prevAudioBtn.addEventListener('click', prevAudio);
 nextAudioBtn.addEventListener('click', nextAudio);
