@@ -38,7 +38,7 @@ body {
 }
 
 .audio-image {
-    height: 25vh;
+    height: 240px;
     padding-top: 30px;
 }
 
@@ -49,7 +49,7 @@ body {
 }
 
 .audio-title {
-    height: 15vh;
+    height: 145px;
     font-size: 24px;
     font-weight: bolder;
 }
@@ -143,6 +143,34 @@ ul {
 }
 
 .visual-menu {
-    height: auto;
+    height: 400px;
     color: rgb(34, 34, 34);
+}
+
+@media screen and (max-height: 780px) {
+    .container {
+        margin: 30px auto;
+    }
+
+    .hidden-menu {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 346px) {
+    .hidden-menu {
+        width: 90%;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .hidden-menu {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-height: 576px) {
+    .container {
+        margin: 10px auto;
+    }
 }
